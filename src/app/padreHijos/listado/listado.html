@@ -1,0 +1,26 @@
+<h3>Listado de empleados</h3>
+
+<div class="list-group mt-3">
+    @for(item of empleados; track $index){
+    <button class="
+            list-group-item
+            list-group-item-action
+            list-group-item-warning"
+            (click)="enviarMnesaje(item)">
+        <div class="d-flex w-100 justify-content-between">
+            <div>
+                <h5>{{item.nombre}}</h5>
+                Activo: @if (item.activo) {
+                <i class="bi bi-check2-circle text-success"></i>
+                } @else {
+                <i class="bi bi-x-circle text-danger"></i>
+                }
+            </div>
+            <div>
+                <img src="{{item.foto}}{{item.nombre}}" alt="" class="img-fluid" style="height: 75px;">
+            </div>
+        </div>
+
+    </button>
+    }
+</div>

@@ -1,0 +1,80 @@
+<br>
+
+<div class="row">
+    <div class="col-12 col-md-4">
+        @switch (valor) {
+        @case (1) {
+        <img src="/dados/Dado1.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (2) {
+        <img src="/dados/Dado2.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (3) {
+        <img src="/dados/Dado3.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (4) {
+        <img src="/dados/Dado4.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (5) {
+        <img src="/dados/Dado5.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (6) {
+        <img src="/dados/Dado6.png" alt="" height="100" width="100" class="spinner">
+        }
+        }
+    </div>
+    <div class="col-12 col-md-4">
+        @switch (valor2) {
+        @case (1) {
+        <img src="/dados/Dado1.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (2) {
+        <img src="/dados/Dado2.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (3) {
+        <img src="/dados/Dado3.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (4) {
+        <img src="/dados/Dado4.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (5) {
+        <img src="/dados/Dado5.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (6) {
+        <img src="/dados/Dado6.png" alt="" height="100" width="100" class="spinner">
+        }
+        }
+    </div>
+    <div class="col-12 col-md-4">
+        @switch (valor3) {
+        @case (1) {
+        <img src="/dados/Dado1.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (2) {
+        <img src="/dados/Dado2.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (3) {
+        <img src="/dados/Dado3.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (4) {
+        <img src="/dados/Dado4.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (5) {
+        <img src="/dados/Dado5.png" alt="" height="100" width="100" class="spinner">
+        }
+        @case (6) {
+        <img src="/dados/Dado6.png" alt="" height="100" width="100" class="spinner">
+        }
+        }
+    </div>
+</div>
+
+<br><br>
+<button class="btn btn-primary btn-danger col-12" id="girar" (click)="tirar()">TIRAR</button>
+<br><br>
+
+@if (ganar == true) {
+    <h2>Resultado : <span style="color: gold;" id="ganar">¡Ganaste!</span></h2>
+} @else {
+    <h2>Resultado : <span style="color: red;">Perdiste.</span></h2>
+}

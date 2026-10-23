@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row m-3">
+        <div class="col-5">
+            <app-listado (mensajeEvento)="recibirMensaje($event)"></app-listado>
+        </div>
+        <div class="col-7">
+            <app-detalles [valor] = "empleado"></app-detalles>
+        </div>
+    </div>
+</div>

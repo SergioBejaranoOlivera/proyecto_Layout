@@ -1,0 +1,15 @@
+<div class="card card-row my-5" style="max-width: 540px;">
+    <img src="{{valor?.foto}}{{valor?.nombre}}" class="card-img-end" alt="">
+    <div class="card-body">
+        <h3 class="card-title">Nombre:&nbsp; {{valor?.nombre}}</h3>
+        <p>Edad:&nbsp;{{valor?.edad}}</p>
+        <p>Email:&nbsp;{{valor?.email}}</p>
+        <p>
+            @if (valor?.activo) {
+            Activo: <i class="bi bi-check2-circle text-success"></i>
+            } @else {
+            Activo: <i class="bi bi-x-circle text-danger"></i>
+            }
+        </p>
+    </div>
+</div>
