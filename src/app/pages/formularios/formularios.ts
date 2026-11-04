@@ -56,6 +56,7 @@ export class Formularios {
         categoria: "Frutas"
       }
     ];
+    
     this.producto = {
       id: this.productos.length + 1,
       nombre: "",
